@@ -11,7 +11,7 @@ import com.google.firebase.database.*
 
 class FirebaseDb {
     val session: FirebaseAuth = FirebaseAuth.getInstance()
-    val databaseReference: DatabaseReference? = FirebaseDatabase.getInstance().getReference("player")
+    val databaseReference: DatabaseReference? = FirebaseDatabase.getInstance().getReference("users")
     var dataListener: DataListener? = null
 
     fun createPlayer(player: Player) {
@@ -23,6 +23,7 @@ class FirebaseDb {
                 }
             }
     }
+    
 
     @SuppressLint("CommitPrefEdits")
     fun updateScore(context: Context, score: Int, highscore: Int) {
@@ -30,7 +31,7 @@ class FirebaseDb {
         val prefences = context.getSharedPreferences("db", Context.MODE_PRIVATE)
         val editor = prefences.edit()
 
-        FirebaseDatabase.getInstance().getReference("player").child(session.currentUser!!.uid).run {
+        FirebaseDatabase.getInstance().getReference("users").child(session.currentUser!!.uid).run {
 
             val tempHighscore = prefences.getInt("high", 0)
             if (tempHighscore == 0 || highscore > tempHighscore) {

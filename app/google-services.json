@@ -1,43 +1,42 @@
 {
   "project_info": {
-    "project_number": "852340819517",
-    "firebase_url": "https://cardgame-427ef.firebaseio.com",
-    "project_id": "cardgame-427ef",
-    "storage_bucket": "cardgame-427ef.appspot.com"
+    "project_number": "826124209270",
+    "firebase_url": "https://n11-kart-oyunu.firebaseio.com",
+    "project_id": "n11-kart-oyunu",
+    "storage_bucket": "n11-kart-oyunu.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:852340819517:android:da79a7b8eef02bd0",
+        "mobilesdk_app_id": "1:826124209270:android:fc839806a8aa7f095aa357",
         "android_client_info": {
-          "package_name": "com.monofire.navigation"
+          "package_name": "com.cardGame.n11"
         }
       },
       "oauth_client": [
         {
-          "client_id": "852340819517-fach2faidff3hg66d8g5kgjk6mquooge.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.monofire.navigation",
-            "certificate_hash": "8fb2b1efe9e582072fb4079f6ad429561da83b78"
-          }
-        },
-        {
-          "client_id": "852340819517-4qvh7d3aml4918vne5u2lnc0nkebvdpd.apps.googleusercontent.com",
+          "client_id": "826124209270-uffk8uufft9ecbv18h35j5areu9r0m0g.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDr5VrxhUBMJ-AqlAJwerXHJbbpNTbPXG8"
+          "current_key": "AIzaSyBMahD3psHuB-U0eGRT1P9CmKzAQTlVY1Q"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "852340819517-4qvh7d3aml4918vne5u2lnc0nkebvdpd.apps.googleusercontent.com",
+              "client_id": "826124209270-uffk8uufft9ecbv18h35j5areu9r0m0g.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "826124209270-acq9n5h24k5eaotpt51h1qtfk5gbm102.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "countryApp.N11---Kart-Oyunu"
+              }
             }
           ]
         }

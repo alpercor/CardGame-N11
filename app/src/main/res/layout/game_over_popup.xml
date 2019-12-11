@@ -9,22 +9,18 @@
               android:layout_height="wrap_content">
 
 
-    <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:srcCompat="@drawable/game_over_icon_24dp"
-            android:id="@+id/imageView2"
-            tools:ignore="VectorDrawableCompat"/>
     <TextView
-            android:text="Katbettiniz"
-            android:textSize="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/textView"/>
-    <Button
-            android:text="Ana Sayfaya dön"
-            android:background="#fff"
-            android:padding="5dp"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_back_main"/>
+            android:text="You Lose"
+            android:textSize="30dp" />
+
+    <Button
+            android:id="@+id/btn_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:padding="5dp"
+            android:text="Return Dashboard" />
 </LinearLayout>
