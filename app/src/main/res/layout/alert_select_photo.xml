@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:layout_height="wrap_content">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:layout_height="100dp"
+                android:id="@+id/photo"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:src="@drawable/boy"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="boy"
+                android:layout_height="100dp"
+                android:onClick="clickListener"
+                android:id="@+id/photo1"/>
+        <ImageView
+                android:src="@drawable/girl"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="girl"
+                android:onClick="clickListener"
+                android:layout_height="100dp"
+                android:id="@+id/photo2"/>
+
+        <ImageView
+                android:src="@drawable/ma4"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="ma4"
+                android:onClick="clickListener"
+
+                android:layout_height="100dp" android:id="@+id/photo3"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+        <ImageView
+                android:src="@drawable/man"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="man"
+                android:onClick="clickListener"
+
+                android:layout_height="100dp" android:id="@+id/photo4"/>
+        <ImageView
+                android:src="@drawable/man2"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="man2"
+                android:onClick="clickListener"
+
+                android:layout_height="100dp" android:id="@+id/photo5"/>
+        <ImageView
+                android:src="@drawable/man3"
+                android:layout_width="100dp"
+                android:padding="10dp"
+                android:tag="man3"
+                android:onClick="clickListener"
+                android:layout_height="100dp" android:id="@+id/photo6"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:layout_height="wrap_content">
+        <Button
+                android:layout_width="wrap_content"
+                android:text="select"
+                android:background="#fff"
+                android:id="@+id/btn_select_photo"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

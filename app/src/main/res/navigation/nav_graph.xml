@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/loginFragment">
+
+
+    <fragment android:id="@+id/loginFragment"
+              android:name="com.monofire.navigation.LoginFragment"
+              android:label="fragment_login"
+              tools:layout="@layout/fragment_login">
+
+        <action android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment"/>
+
+        <action android:id="@+id/action_loginFragment_to_dashboard"
+                app:destination="@id/dashboard"/>
+
+    </fragment>
+
+    <fragment android:id="@+id/registerFragment"
+              android:name="com.monofire.navigation.RegisterFragment"
+              android:label="fragment_register"
+              tools:layout="@layout/fragment_register">
+
+        <action android:id="@+id/action_registerFragment_to_dashboard"
+                app:destination="@id/dashboard"/>
+    </fragment>
+
+
+    <fragment android:id="@+id/dashboard"
+              android:name="com.monofire.navigation.DashboardFragment"
+              android:label="fragment_dashboard"
+              tools:layout="@layout/fragment_dashboard">
+        <action android:id="@+id/action_dashboard_to_gameFragment" app:destination="@id/gameFragment"/>
+        <action android:id="@+id/action_dashboard_to_leadersFragment" app:destination="@id/leadersFragment"/>
+    </fragment>
+    <fragment android:id="@+id/gameFragment" android:name="com.monofire.navigation.GameFragment"
+              android:label="fragment_game" tools:layout="@layout/fragment_game"/>
+
+    <fragment android:id="@+id/leadersFragment" android:name="com.monofire.navigation.LeadersFragment"
+              android:label="fragment_leaders" tools:layout="@layout/fragment_leaders"/>
+
+
+</navigation>

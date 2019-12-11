@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:background="#dddd"
+              android:padding="40dp"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/succes_icon"
+            android:id="@+id/imageView2"
+            tools:ignore="VectorDrawableCompat"/>
+    <TextView
+            android:text="Tebrikler.Tüm seviyeleri geçtiniz."
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"/>
+    <TextView
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:text="Score"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_successScore"/>
+    <Button
+            android:text="Ana Sayfaya dön"
+            android:background="#fff"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_back_main"/>
+</LinearLayout>

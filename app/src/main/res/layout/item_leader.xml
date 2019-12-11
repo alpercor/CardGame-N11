@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="horizontal"
+              android:background="#D0D9DE"
+              android:gravity="center"
+              android:layout_marginBottom="3dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:id="@+id/img_profile"
+            app:srcCompat="@drawable/boy"/>
+    <TextView
+            android:text="name"
+            android:layout_weight="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_player_name"/>
+    <TextView
+            android:text="score"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_player_score"/>
+</LinearLayout>
