@@ -1,10 +1,10 @@
-package com.monofire.navigation.Database
+package com.cardGame.n11.Database
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.Log
-import com.monofire.navigation.Listener.DataListener
-import com.monofire.navigation.Modal.Player
+import com.cardGame.n11.Listener.DataListener
+import com.cardGame.n11.Modal.Player
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
@@ -18,10 +18,8 @@ class FirebaseDb {
         databaseReference!!.child(session.currentUser!!.uid)
             .setValue(player).addOnCompleteListener {
                 if (it.isSuccessful) {
-                    Log.e("deneme", "başarılı1")
                     //profileGetData()
                 } else {
-                    Log.e("deneme", "başarılı2")
                 }
             }
     }
